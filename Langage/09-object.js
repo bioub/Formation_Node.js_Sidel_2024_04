@@ -97,3 +97,21 @@ console.log("vincent.name", vincent.name);
 console.log("vincent.hello()", vincent.hello());
 
 console.log(romain.hello === vincent.hello); // true : 1 seule fonction, false : plusieurs fonction
+
+
+
+const coords = {
+  x: 1,
+  y: 2,
+};
+
+// coords.z = 3;
+Object.defineProperty(coords, 'z', {
+  value: 3,
+  writable: false,
+  enumerable: false,
+  configurable: false,
+})
+console.log(coords.z); // 3
+
+console.log(JSON.stringify(coords));
