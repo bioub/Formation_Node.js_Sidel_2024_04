@@ -25,6 +25,13 @@ export function createTodoItem(todo) {
   // Exercice 2
   // Au clic du bouton moins supprimer la balise div ancêtre
   // dont la classe est "todos-item"
+  const buttonEl = document.createElement('button');
+  buttonEl.className = "todos-button-remove";
+  buttonEl.innerText = '-';
+  buttonEl.addEventListener('click', () => {
+    divEl.remove();
+  });
+  divEl.append(buttonEl);
 
   // Exercice 4
   // Ecouter le double-clic de la span qui a la classe "todos-title"
