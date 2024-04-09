@@ -21,3 +21,9 @@ formEl.addEventListener("submit", (event) => {
   });
   listEl.append(itemEl);
 });
+
+
+// Exercice 3
+// Au clic de la checkbox présente dans le formulaire
+// cocher ou décocher toutes les checkboxes qui sont dans
+// la balise div ayant la classe "todos-list"
