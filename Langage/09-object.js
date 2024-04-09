@@ -72,7 +72,9 @@ const coordsB = {
 
 class Contact {
   constructor(name) {
-    this.name = name;
+    // if (name.length > 2) {
+      this.name = name; // dynamique
+    // }
   }
   hello() {
     return "Hello my name is " + this.name;
