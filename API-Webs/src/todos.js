@@ -26,5 +26,11 @@ export function createTodoItem(todo) {
   // Au clic du bouton moins supprimer la balise div ancêtre
   // dont la classe est "todos-item"
 
+  // Exercice 4
+  // Ecouter le double-clic de la span qui a la classe "todos-title"
+  // La remplacer par un champs
+  // Si l'utilisateur appuie sur la touche ENTREE dans le champs
+  // revenir à la balise span
+
   return divEl;
 }
