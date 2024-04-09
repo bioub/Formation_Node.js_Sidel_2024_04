@@ -12,12 +12,12 @@ export function createTodoItem(todo) {
   //   <span class="todos-title">Acheter du pain</span>
   //   <button class="todos-button-remove">-</button>
   // </div>
-  const divEl = document.createElement('div');
+  const divEl = document.createElement("div");
   divEl.className = "todos-item";
   divEl.dataset.todoId = String(todo.id);
 
-  const spanEl = document.createElement('span');
-  spanEl.className = 'todos-title';
+  const spanEl = document.createElement("span");
+  spanEl.className = "todos-title";
   spanEl.innerText = todo.title;
 
   divEl.append(spanEl);
@@ -25,10 +25,10 @@ export function createTodoItem(todo) {
   // Exercice 2
   // Au clic du bouton moins supprimer la balise div ancêtre
   // dont la classe est "todos-item"
-  const buttonEl = document.createElement('button');
+  const buttonEl = document.createElement("button");
   buttonEl.className = "todos-button-remove";
-  buttonEl.innerText = '-';
-  buttonEl.addEventListener('click', () => {
+  buttonEl.innerText = "-";
+  buttonEl.addEventListener("click", () => {
     divEl.remove();
   });
   divEl.append(buttonEl);

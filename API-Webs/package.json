@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "prettier": "^3.2.5",
+    "serve": "^14.2.1",
+    "typescript": "^5.4.4"
+  },
+  "scripts": {
+    "format": "prettier --write \"**/*.{js,json,ts,html}\"",
+    "start": "serve",
+    "build": "tsc"
+  }
+}
