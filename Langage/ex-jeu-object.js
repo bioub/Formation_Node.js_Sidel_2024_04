@@ -22,7 +22,7 @@ const Random = {
 }
 
 
-const readline = require('readline');
+const readline = require('node:readline');
 
 
 // Exercice 2

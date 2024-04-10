@@ -1,4 +1,4 @@
-import { createTodoItem } from "./todos";
+import { createTodoItem } from "./todos.js";
 const formEl = document.querySelector(".todos-form");
 const inputEl = document.querySelector(".todos-form-value");
 const listEl = document.querySelector(".todos-list");

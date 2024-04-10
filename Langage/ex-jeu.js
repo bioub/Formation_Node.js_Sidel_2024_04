@@ -1,5 +1,6 @@
 // importe un API de Node.js
-const readline = require('readline');
+const readline = require('node:readline');
+const process = require('node:process');
 
 // configure readline pour lire des lignes
 // sur le clavier (process.stdin quelque chose qui précède la touche ENTREE)
