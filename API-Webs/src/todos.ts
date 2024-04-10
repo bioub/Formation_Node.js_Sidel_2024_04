@@ -1,10 +1,12 @@
+import type { Todo } from "./types";
+
 /**
  * @param {object} todo
  * @param {number} todo.id
  * @param {string} todo.title
  * @param {boolean} todo.completed
  */
-export function createTodoItem(todo) {
+export function createTodoItem(todo: Todo) {
   // Exercice 1
   // Compléter cette fonction de sorte à créer les éléments manquants :
   // <div class="todos-item" data-todo-id="1">

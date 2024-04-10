@@ -34,7 +34,7 @@ console.log(hello(...names));
 
 // SPREAD permet aussi de cloner rapidement
 const clone = [...names];
-const newNames = [...names, 'toto'];
+const newNames = [...names, 'toto', 'titi'];
 
 // const romain = newNames[0];
 // const vincent = newNames[1];
