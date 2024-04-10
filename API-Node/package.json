@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@types/node": "^20.12.7",
+    "minimist": "^1.2.8"
+  },
+  "devDependencies": {
+    "@types/minimist": "^1.2.5"
+  }
+}
