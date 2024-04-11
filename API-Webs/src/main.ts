@@ -1,3 +1,4 @@
+import { fetchTodos } from "./api.js";
 import { createTodoItem } from "./todos.js";
 
 const formEl = document.querySelector(".todos-form") as HTMLFormElement;
@@ -29,3 +30,11 @@ formEl.addEventListener("submit", (event) => {
 // ici en écoutant les événements sur listEl
 // puis en déterminant grace à la classe comme dans l'exemple de la slide 29
 // s'ils correspondent au élément qui doivent déclencher l'action
+
+
+fetchTodos().then((todos) => {
+  for (const todo of todos) {
+    const itemEl = createTodoItem(todo);
+    listEl.append(itemEl);
+  }
+});

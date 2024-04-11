@@ -115,3 +115,16 @@ Object.defineProperty(coords, 'z', {
 console.log(coords.z); // 3
 
 console.log(JSON.stringify(coords));
+
+
+// 2 syntaxes pour accéder aux clés (en lecture/écriture)
+// une statique
+
+coords.z = 3
+console.log(coords.z); // 3
+
+// une dynamique
+
+const key = 'z';
+coords[key] = 3;
+console.log(coords[key]); // 3
