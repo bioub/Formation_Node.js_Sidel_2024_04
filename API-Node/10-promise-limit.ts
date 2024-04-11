@@ -16,8 +16,8 @@
 // - laisser le code classique avec callbacks
 // - utiliser une bibliothèque comme RxJS (le choix d'Angular)
 // - async iterator (ES2018)
-import readline from 'readline';
-import fs from 'fs';
+import readline from 'node:readline';
+import fs from 'node:fs';
 import { fromEvent, map } from 'rxjs';
 
 function solution1() {
@@ -27,7 +27,7 @@ function solution1() {
 
   let cpt = 0;
 
-  rl.addListener('line', (line) => {
+  rl.on('line', (line) => {
     console.log(++cpt + ' | ' + line);
   });
 }

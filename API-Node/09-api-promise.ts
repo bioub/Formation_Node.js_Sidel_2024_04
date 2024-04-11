@@ -16,7 +16,7 @@
 //   console.log('1s');
 // });
 
-// import { setTimeout } from "timers/promises";
+// import { setTimeout } from "node:timers/promises";
 
 // setTimeout(1000).then(() => {
 //   console.log("1s");

@@ -1,4 +1,4 @@
-import fs from 'fs/promises';
+import fs from 'node:fs/promises';
 
 // asynchrone basée sur des promesses avec async/await
 // simple à écrire

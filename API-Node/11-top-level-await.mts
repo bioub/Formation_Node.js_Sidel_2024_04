@@ -1,4 +1,4 @@
-import fs from 'fs/promises';
+import fs from 'node:fs/promises';
 
 try {
   const buffer = await fs.readFile("package.json");
