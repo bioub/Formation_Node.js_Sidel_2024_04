@@ -4,6 +4,7 @@
     "minimist": "^1.2.8"
   },
   "devDependencies": {
-    "@types/minimist": "^1.2.5"
+    "@types/minimist": "^1.2.5",
+    "typescript": "^5.4.5"
   }
 }
