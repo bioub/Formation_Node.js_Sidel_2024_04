@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "chai-http": "^4.4.0",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.17.1",
@@ -7,13 +8,19 @@
     "uuid": "^9.0.1"
   },
   "devDependencies": {
+    "chai": "^4.4.1",
     "eslint": "^9.0.0",
-    "nodemon": "^3.1.0"
+    "mocha": "^10.4.0",
+    "nodemon": "^3.1.0",
+    "nyc": "^15.1.0",
+    "sinon": "^17.0.1",
+    "sinon-chai": "^3.7.0"
   },
   "scripts": {
     "start": "node index.js",
     "start:dev": "nodemon index.js",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "test": "mocha \"./{,!(node_modules)/**}/*.test.js\""
   }
 }
