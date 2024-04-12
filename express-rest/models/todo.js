@@ -17,6 +17,10 @@ function generateId() {
 }
 
 function find() {
+  // await client.connect();
+  // const res = await client.query('SELECT id, title, completed FROM todos');
+  // const todos = res.rows;
+
   return Promise.resolve(todos);
 }
 
